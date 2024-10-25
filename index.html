@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manage landing page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="pt-10 px-6">
+        <nav class="container mx-auto flex items-center justify-between pr-28 pl-32">
+            <div>
+                <img src="./img/logo.svg" alt="Manage" class="h-6">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-gray-500">Pricing</a>
+                <a href="#" class="text-gray-700 hover:text-gray-500">Product</a>
+                <a href="#" class="text-gray-700 hover:text-gray-500">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-gray-500">Careers</a>
+                <a href="#" class="text-gray-700 hover:text-gray-500">Community</a>
+            </div>
+            <a href="#" class="hidden md:block bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30">
+                Get Started
+            </a>
+            <button class="md:hidden">
+                <img src="./img/icon-hamburger.svg" alt="Menu" class="h-4">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="text-center md:text-left space-y-8 pl-32">
+                <h1 class="text-4xl md:text-5xl font-bold text-[#232C50] leading-tight">
+                    Bring everyone<br>together to build<br> better products.
+                </h1>
+                <p class="text-gray-500 text-lg max-w-md mx-auto md:mx-0">
+                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+                </p>
+                <div>
+                    <a href="#" class="inline-block bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="relative order-first md:order-last">
+                <img src="./img/illustration-intro.svg" alt="Illustration" class="w-full max-w-lg mx-auto intro-image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

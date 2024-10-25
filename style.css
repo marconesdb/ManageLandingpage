@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+        
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 16px;
+            color: hsl(233, 12%, 13%);
+            font-weight:700;
+        
+        }
+
+
+
+        .intro-image {
+            margin-top: 60px;
+            margin-right: 300px;
+           
+        }
+
+        /* Cores */
+        .bg-bright-red {
+            background-color: hsl(12, 88%, 59%);
+        }
+
+        .text-bright-red {
+            color: hsl(12, 88%, 59%);
+        }
+
+        .bg-dark-blue {
+            background-color: hsl(228, 39%, 23%);
+        }
+
+        .text-dark-blue {
+            color: hsl(228, 39%, 23%);
+        }
+
+        .text-dark-grayish-blue {
+            color: hsl(227, 12%, 61%);
+        }
+
+        .bg-very-light-gray {
+            background-color: hsl(0, 0%, 98%);
+        }
+
+        .text-very-pale-red {
+            color: hsl(13, 100%, 96%);
+        }
+
+        .bg-very-pale-red {
+            background-color: hsl(13, 100%, 96%);
+        }
+
+        /* Estilos customizados */
+        .hero-section {
+            background-color: hsl(0, 0%, 98%);
+        }
+
+        body {
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: -200px; /* Ajuste este valor conforme necessário */
+            right: -200px; /* Ajuste para controlar a posição horizontal */
+            width: 800px; /* Largura fixa para a imagem de fundo */
+            height: 800px; /* Altura fixa para a imagem de fundo */
+            background-image: url('./img/bg-tablet-pattern.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: -1;
+        }
+
+        .illustration-intro {
+            position: relative;
+            left: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .illustration-intro {
+                left: 0;
+            }
+            
+            body::before {
+                width: 500px;
+                height: 500px;
+                right: -200px;
+                top: -100px;
+            }
+        }
+    
