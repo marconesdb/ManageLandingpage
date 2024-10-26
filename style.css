@@ -97,4 +97,34 @@
             transform: translateY(-50%);
             position: relative;
         }
+
         
+        .container-relative::before {
+            content: '';
+            position: absolute;
+            top: 900px;  /* Ajuste conforme necessário */
+            left: -300px; /* Ajuste conforme necessário */
+            width: 700px; /* Largura fixa para a imagem de fundo */
+            height: 400px; /* Altura fixa para a imagem de fundo */
+            background-image: url('./img/bg-tablet-pattern.svg'); /* Ou seu arquivo */
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -100; /* Para garantir que fique atrás do conteúdo */
+           
+        }
+
+        
+                    
+
+       .footer-text{
+        font-size: 16px;
+        font-weight: normal;
+       }
+
+       .Copyright{
+        font-size: 10px;
+        color: hsl(227, 12%, 61%);
+        font-weight: normal;
+       }
+       
+     
