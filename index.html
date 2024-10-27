@@ -1,281 +1,316 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manage landing page</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Manage Landing Page</title>
     <!-- CSS Externo -->
     <link rel="stylesheet" href="style.css">
+    <!-- CND Tailwind.CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- CND Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
-<body>
-    <header class="pt-10 px-6 relative">
-        <nav class="container mx-auto">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="flex items-center justify-between h-16">
-                    <!-- Logo -->
-                    <div class="flex-shrink-0">
-                        <span class="text-2xl font-bold flex items-center">
-                            <img src="./img/logo.svg" alt="Manage" class="h-6">
-                        </span>
-                    </div>
 
-                    <!-- Desktop Menu -->
-                    <div class="hidden lg:flex space-x-8">
-                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Pricing</a>
-                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Product</a>
-                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">About Us</a>
-                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Careers</a>
-                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Community</a>
-                    </div>
+<body class="bg-gray-50">
 
-                    <!-- CTA Button -->
-                    <div class="hidden lg:flex">
-                        <a href="#" class="bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30">
-                            Get Started
-                        </a>
-                    </div>
+    <!-- Header -->
+    <header class="">
+        <nav class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-12">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <span class="text-xl sm:text-2xl font-bold flex items-center">
+                        <img src="./img/logo.svg" alt="Manage" class="h-5 sm:h-6">
+                    </span>
+                </div>
 
-                    <!-- Mobile menu button -->
-                    <div class="lg:hidden">
-                        <button id="mobile-menu-button" class="flex items-center p-2" aria-label="Menu">
-                            <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                            <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
+                <!-- Menu Desktop -->
+                <div class="hidden lg:flex space-x-4 xl:space-x-8">
+                    <a href="#" class="font-bold text-gray-700 hover:text-gray-500 text-sm xl:text-base">Pricing</a>
+                    <a href="#" class="font-bold text-gray-700 hover:text-gray-500 text-sm xl:text-base">Product</a>
+                    <a href="#" class="font-bold text-gray-700 hover:text-gray-500 text-sm xl:text-base">About Us</a>
+                    <a href="#" class="font-bold text-gray-700 hover:text-gray-500 text-sm xl:text-base">Careers</a>
+                    <a href="#" class="font-bold text-gray-700 hover:text-gray-500 text-sm xl:text-base">Community</a>
+                </div>
+
+                <!-- Botão CTA Desktop -->
+                <div class="hidden lg:flex">
+                    <a href="#" class="bg-[#F3603C] text-white px-5 xl:px-6 py-2 xl:py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30 text-sm xl:text-base">
+                        Get Started
+                    </a>
+                </div>
+
+                
+               
+
+                <!-- Botão menu mobile -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="flex items-center p-2 focus:outline-none" aria-label="Menu">
+                        <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
             </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden">
-                <div class="rounded-lg py-4">
-                    <div class="flex flex-col items-center space-y-2">
-                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Pricing</a>
-                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Product</a>
-                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">About Us</a>
-                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Careers</a>
-                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Community</a>
-                    </div>
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="hidden lg:hidden absolute left-4 right-4 mt-4 bg-white rounded-lg shadow-xl z-50">
+                <div class="py-2 space-y-1 text-center">
+                    <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm sm:text-base">Pricing</a>
+                    <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm sm:text-base">Product</a>
+                    <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm sm:text-base">About Us</a>
+                    <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm sm:text-base">Careers</a>
+                    <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm sm:text-base">Community</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Menu Overlay -->
-    <div class="menu-overlay"></div>
-
-     <!-- Hero Section -->
-     <section class="pt-20 px-6">
-        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <!-- Hero Section -->
+    <section class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 md:pt-20 lg:pt-24">
+        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             <!-- Left Content -->
-            <div class="text-center md:text-left space-y-8 pl-32">
-                <h1 class="text-4xl md:text-5xl font-bold text-[#232C50] leading-tight">
-                    Bring everyone<br>together to build<br> better products.
+            <div class="text-center md:text-left space-y-4 sm:space-y-6 lg:space-y-8">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#232C50] leading-tight">
+                    Bring everyone<br class="hidden sm:block">together to build<br class="hidden sm:block"> better products.
                 </h1>
-                <p class="text-gray-500 text-lg max-w-md mx-auto md:mx-0">
-                    Manage makes it simple for software teams <br> to plan day-to-day tasks while keeping the <br> larger team goals in view.
+                <p class="text-gray-500 text-sm sm:text-base lg:text-lg max-w-md mx-auto md:mx-0">
+                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
                 </p>
                 <div>
-                    <a href="#" class="inline-block bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30">
+                    <a href="#" class="inline-block bg-[#F3603C] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30 transition-all duration-300 text-sm sm:text-base">
                         Get Started
                     </a>
                 </div>
             </div>
 
             <!-- Right Content -->
-            <div class="relative order-first md:order-last ">
-                <img src="./img/illustration-intro.svg" alt="Illustration" class="w-full max-w-lg mx-auto intro-image">
+            <div class="order-first md:order-last flex justify-center md:justify-end">
+                <img src="./img/illustration-intro.svg" alt="Illustration" class="w-full max-w-[250px] sm:max-w-xs md:max-w-md lg:max-w-lg">
             </div>
         </div>
     </section>
 
 
-    <!-- Features Section -->
-<section class="section-testimonial pt-20 pb-20 bg-text-very-pale-red">
-    <div class="container mx-auto grid md:grid-cols-2 gap-12 pr-28 pl-28 xl:pr-32  xl:pl-32">
+ <!-- Features Section --> 
+<section class="features-section pt-20 pb-20 bg-text-very-pale-red">
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid gap-12 md:grid-cols-2">
+        
         <!-- First Column (Title and Description) -->
         <div class="space-y-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-[#232C50]">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#232C50] leading-tight">
                 What’s different about Manage?
             </h2>
-            <p class="text-gray-500 text-lg">
-                Manage provides all the functionality your <br> team needs, without the complexity. Our <br> software is tailor-made for modern digital <br> product teams.
+            <p class="text-gray-500 text-sm sm:text-base lg:text-lg">
+                Manage provides all the functionality your <br> team needs, without the complexity. Our <br> software is tailor-made for modern digital <br>product teams.
             </p>
-        
         </div>
 
         <!-- Second Column (Numbered Features) -->
         <div class="space-y-8">
             <!-- Feature 1 -->
             <div class="flex items-start space-x-4">
-                <span class="bg-bright-red text-white text-lg font-bold h-10 w-16 rounded-full flex items-center justify-center">
+                <span class="bg-[#FF5733] text-white text-lg font-bold h-10 min-w-[60px] rounded-full flex items-center justify-center">
                     01
                 </span>
                 <div>
-                    <h3 class="text-xl font-bold text-[#232C50] mb-2">
+                    <h3 class="text-lg sm:text-xl font-bold text-[#232C50] mb-2">
                         Track company-wide progress
                     </h3>
-                    <p class="text-gray-500">
-                        See how your day-to-day tasks fit into the wider vision.<br> Go from tracking progress at the milestone level all the <br> way down to the smallest of details. Never lose sight of <br> the bigger picture again.
+                    <p class="text-gray-500 text-sm sm:text-base">
+                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.
                     </p>
                 </div>
             </div>
 
             <!-- Feature 2 -->
             <div class="flex items-start space-x-4">
-                <span class="bg-bright-red text-white text-lg font-bold h-10 w-16 rounded-full flex items-center justify-center">
+                <span class="bg-[#FF5733] text-white text-lg font-bold h-10 min-w-[60px] rounded-full flex items-center justify-center">
                     02
                 </span>
                 <div>
-                    <h3 class="text-xl font-bold text-[#232C50] mb-2">
+                    <h3 class="text-lg sm:text-xl font-bold text-[#232C50] mb-2">
                         Advanced built-in reports
                     </h3>
-                    <p class="text-gray-500">
-                        Set internal delivery estimates and track progress toward <br> company goals. Our customisable dashboard helps you <br> build out the reports you need to keep key stakeholders <br> informed.
+                    <p class="text-gray-500 text-sm sm:text-base">
+                        Set internal delivery estimates and track progress toward company goals. Our customizable dashboard helps you build out the reports you need to keep key stakeholders informed.
                     </p>
                 </div>
             </div>
 
             <!-- Feature 3 -->
             <div class="flex items-start space-x-4">
-                <span class="bg-bright-red text-white text-lg font-bold h-10 w-16 rounded-full flex items-center justify-center">
+                <span class="bg-[#FF5733] text-white text-lg font-bold h-10 min-w-[60px] rounded-full flex items-center justify-center">
                     03
                 </span>
                 <div>
-                    <h3 class="text-xl font-bold text-[#232C50] mb-2">
+                    <h3 class="text-lg sm:text-xl font-bold text-[#232C50] mb-2">
                         Everything you need in one place
                     </h3>
-                    <p class="text-gray-500">
-                        Stop jumping from one service to another to <br> communicate, store files, track tasks and share <br> documents. Manage offers an all-in-one team <br> productivity solution.
+                    <p class="text-gray-500 text-sm sm:text-base">
+                        Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
                     </p>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
 
 
-<div class=" py-20  bg-very-light-gray section-content  div-testimonial">
+<!-- Testimonial Section -->
+<section class="py-20 bg-very-light-gray testimonial-section w-full">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-[#232C50] mb-36">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#232C50] mb-16 md:mb-24">
             What they've said
         </h2>
-        <div class=" grid md:grid-cols-3 gap-8">
+
+        <div class="grid gap-8 sm:gap-10 md:grid-cols-3">
             <!-- Testimonial 1 -->
-            <div class="space-y-4 bg-gray-50 relative">
+            <div class="space-y-4 bg-gray-100 p-6 rounded-lg ">
                 <img src="./img/avatar-anisha.png" alt="Anisha Li" class="w-16 h-16 rounded-full mx-auto avatar-position">
-                <h3 class="font-bold text-xl text-[#232C50]">Anisha Li</h3>
-                <p class="text-gray-500 p-4">"Manage has supercharged our team’s workflow. The <br> ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+                <h3 class="font-bold text-lg sm:text-xl text-[#232C50]">Anisha Li</h3>
+                <p class="text-gray-500 text-sm sm:text-base">
+                    "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."
+                </p>
             </div>
+
             <!-- Testimonial 2 -->
-            <div class="space-y-4 bg-gray-50 relative">
+            <div class="space-y-4 bg-gray-100 p-6 rounded-lg">
                 <img src="./img/avatar-ali.png" alt="Ali Bravo" class="w-16 h-16 rounded-full mx-auto avatar-position">
-                <h3 class="font-bold text-xl text-[#232C50]">Ali Bravo</h3>
-                <p class="text-gray-500 p-4">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+                <h3 class="font-bold text-lg sm:text-xl text-[#232C50]">Ali Bravo</h3>
+                <p class="text-gray-500 text-sm sm:text-base">
+                    "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
+                </p>
             </div>
+
             <!-- Testimonial 3 -->
-            <div class="space-y-4 bg-gray-50 relative">
+            <div class="space-y-4 bg-gray-100 p-6 rounded-lg">
                 <img src="./img/avatar-richard.png" alt="Richard Watts" class="w-16 h-16 rounded-full mx-auto avatar-position">
-                <h3 class="font-bold text-xl text-[#232C50]">Richard Watts</h3>
-                <p class="text-gray-500 p-4">"Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!"</p>
+                <h3 class="font-bold text-lg sm:text-xl text-[#232C50]">Richard Watts</h3>
+                <p class="text-gray-500 text-sm sm:text-base">
+                    "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!"
+                </p>
             </div>
         </div>
+
+        <!-- Call to Action Button -->
         <div class="mt-12">
-            <a href="#" class="inline-block bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30">
+            <a href="#" class="inline-block bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30 transition-all duration-300 mb-32">
                 Get Started
             </a>
         </div>
     </div>
+</section>
+<!-- Section Orange -->
+<div class="bg-[#FF5733] py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col text-white text-4xl md:text-5xl font-bold mb-4 md:mb-0">
+            <span>Simplify how your team</span>
+            <span>works today.</span>
+        </div>
+        <button class="bg-white text-[#FF5733] px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors mt-4 md:mt-0">
+            Get Started
+        </button>
+    </div>
 </div>
 
-</section>
-
-
-<!--Section Orange -->
-
-<div class="bg-[#FF5733]  py-12 pl-2 pr-4 mt-44">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-      <div class="flex flex-col text-white text-4xl md:text-5xl font-bold">
-        <span>Simplify how your team</span>
-        <span>works today.</span>
-      </div>
-      
-      <button class="bg-white text-[#FF5733] px-8  py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
-        Get Started
-      </button>
-    </div>
-  </div>
-
 <!-- Footer container -->
-<footer class="bg-gray-900 text-white py-8 pl-32 pr-4">
-    <div class="container mx-auto px-2">
+<footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Main footer content -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Logo and social icons -->
             <div class="flex flex-col justify-between h-full">
                 <!-- Logo -->
-                <div class="text-2xl font-bold flex items-center">
+                <div class="text-2xl font-bold flex items-center mb-4">
                     <span class="text-coral-500 p-2 text-bright-red">:: </span>
                     <span> manage</span>
                 </div>
                 <!-- Social icons -->
-                <div class="flex space-x-4 mt-8"> <!-- Ajuste a margem aqui -->
+                <!-- <div class="flex space-x-4 mt-4">
                     <a href="#" class="hover:text-gray-400">
-                       <img src="./img/icon-facebook.svg" alt="">
+                        <img src="./img/icon-facebook.svg" alt="Facebook">
                     </a>
                     <a href="#" class="hover:text-gray-400">
-                        <img src="./img/icon-youtube.svg" alt="">
+                        <img src="./img/icon-youtube.svg" alt="YouTube">
                     </a>
                     <a href="#" class="hover:text-gray-400">
-                       <img src="./img/icon-twitter.svg" alt="">
+                        <img src="./img/icon-twitter.svg" alt="Twitter">
                     </a>
                     <a href="#" class="hover:text-gray-400">
-                        <img src="./img/icon-pinterest.svg" alt="">
+                        <img src="./img/icon-pinterest.svg" alt="Pinterest">
                     </a>
                     <a href="#" class="hover:text-gray-400">
-                        <img src="./img/icon-instagram.svg" alt="">
+                        <img class="hover:footer-text:hover" src="./img/icon-instagram.svg" alt="Instagram">
+                    </a>
+                </div> -->
+
+
+                <!-- Social icons -->
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="hover:text-[#FF5733]">
+                        <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+                    </a>
+                    <a href="#" class="hover:text-[#FF5733]">
+                        <i class="fab fa-youtube"></i> <!-- YouTube Icon -->
+                    </a>
+                    <a href="#" class="hover:text-[#FF5733]">
+                        <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                    </a>
+                    <a href="#" class="hover:text-[#FF5733]">
+                        <i class="fab fa-pinterest-p"></i> <!-- Pinterest Icon -->
+                    </a>
+                    <a href="#" class="hover:text-[#FF5733]">
+                        <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
                     </a>
                 </div>
+
             </div>
 
             <!-- Navigation links -->
             <div class="grid grid-cols-2 gap-8 mt-6">
                 <div class="space-y-3">
-                    <a href="#" class="footer-text block hover:text-gray-400">Home</a>
-                    <a href="#" class="footer-text block hover:text-gray-400">Pricing</a>
-                    <a href="#" class="footer-text block hover:text-gray-400">Products</a>
-                    <a href="#" class="footer-text block hover:text-gray-400">About Us</a>
+                    <a href="#" class="footer-text block hover:footer-text:hover">Home</a>
+                    <a href="#" class="footer-text block hover:footer-text:hover">Pricing</a>
+                    <a href="#" class="footer-text block hover:footer-text:hover">Products</a>
+                    <a href="#" class="footer-text block hover:footer-text:hover">About Us</a>
                 </div>
                 <div class="space-y-3">
-                    <a href="#" class="footer-text block hover:text-gray-400">Careers</a>
-                    <a href="#" class="footer-text block hover:text-gray-400">Community</a>
-                    <a href="#" class="footer-text block hover:text-gray-400">Privacy Policy</a>
+                    <a href="#" class="footer-text block hover:footer-text:hover">Careers</a>
+                    <a href="#" class="footer-text block hover:footer-text:hover">Community</a>
+                    <a href="#" class="footer-text block hover:footer-text:hover">Privacy Policy</a>
                 </div>
             </div>
 
             <!-- Email form -->
             <div class="flex flex-col space-y-4 mt-8">
-                <div class="flex">
-                    <input type="email" placeholder="Updates in your inbox..." class="px-4 py-2 rounded-full w-20px focus:outline-none  mr-2 custom-placeholder">
-                    <button class="bg-coral-500 text-white px-6 py-2  hover:bg-coral-600 focus:outline-none   bg-bright-red text-white text-lg font-bold h-10 w-16 rounded-full flex items-center justify-center">Go</button>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                    <input 
+                        type="email" 
+                        placeholder="Updates in your inbox..." 
+                        class="px-4 py-2 rounded-full flex-grow focus:outline-none custom-placeholder mr-2" 
+                        style="min-width: 120px;"
+                    >
+                    <button class="bg-[#FF5733] text-white px-6 py-2 hover:bg-opacity-90 focus:outline-none rounded-full flex items-center justify-center">
+                        Go
+                    </button>
                 </div>
-                <p class="text-sm  Copyright    px-16  " style="margin-top: 50px;">  Copyright 2020. All Rights Reserved</p>
+                <p class="text-sm text-center mt-4 text-copyright">Copyright 2020. All Rights Reserved</p>
             </div>
         </div>
     </div>
 </footer>
 
 
-    <script src="./script.js">
-       
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
