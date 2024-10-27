@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +13,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="pt-10 px-6">
-        <nav class="container mx-auto flex items-center justify-between pr-28 pl-28 xl:pr-32  xl:pl-32">
-            <div>
-                <img src="./img/logo.svg" alt="Manage" class="h-6">
+    <header class="pt-10 px-6 relative">
+        <nav class="container mx-auto">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold flex items-center">
+                            <img src="./img/logo.svg" alt="Manage" class="h-6">
+                        </span>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden lg:flex space-x-8">
+                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Pricing</a>
+                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Product</a>
+                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">About Us</a>
+                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Careers</a>
+                        <a href="#" class="font-bold text-gray-700 hover:text-gray-500">Community</a>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="hidden lg:flex">
+                        <a href="#" class="bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="lg:hidden">
+                        <button id="mobile-menu-button" class="flex items-center p-2" aria-label="Menu">
+                            <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-700 hover:text-gray-500">Pricing</a>
-                <a href="#" class="text-gray-700 hover:text-gray-500">Product</a>
-                <a href="#" class="text-gray-700 hover:text-gray-500">About Us</a>
-                <a href="#" class="text-gray-700 hover:text-gray-500">Careers</a>
-                <a href="#" class="text-gray-700 hover:text-gray-500">Community</a>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden">
+                <div class="rounded-lg py-4">
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Pricing</a>
+                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Product</a>
+                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">About Us</a>
+                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Careers</a>
+                        <a href="#" class="font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center w-full">Community</a>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="hidden md:block bg-[#F3603C] text-white px-8 py-3 rounded-full hover:bg-[#F3603C]/90 shadow-lg shadow-[#F3603C]/30">
-                Get Started
-            </a>
-            <button class="md:hidden">
-                <img src="./img/icon-hamburger.svg" alt="Menu" class="h-4">
-            </button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="pt-20 px-6">
+    <!-- Menu Overlay -->
+    <div class="menu-overlay"></div>
+
+     <!-- Hero Section -->
+     <section class="pt-20 px-6">
         <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
             <!-- Left Content -->
             <div class="text-center md:text-left space-y-8 pl-32">
@@ -60,9 +97,9 @@
         </div>
     </section>
 
-<div class="container-relative">
+
     <!-- Features Section -->
-<section class="pt-20 pb-20 px-6 bg-text-very-pale-red">
+<section class="section-testimonial pt-20 pb-20 bg-text-very-pale-red">
     <div class="container mx-auto grid md:grid-cols-2 gap-12 pr-28 pl-28 xl:pr-32  xl:pl-32">
         <!-- First Column (Title and Description) -->
         <div class="space-y-8">
@@ -123,30 +160,30 @@
             </div>
         </div>
     </div>
-</section>
 
 
-<section class="py-20  bg-very-light-gray section-content">
+
+<div class=" py-20  bg-very-light-gray section-content  div-testimonial">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-[#232C50] mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#232C50] mb-36">
             What they've said
         </h2>
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class=" grid md:grid-cols-3 gap-8">
             <!-- Testimonial 1 -->
             <div class="space-y-4 bg-gray-50 relative">
-                <img src="./img/avatar-anisha.png" alt="Anisha Li" class="w-16 h-16 rounded-full mx-auto translate-up">
+                <img src="./img/avatar-anisha.png" alt="Anisha Li" class="w-16 h-16 rounded-full mx-auto avatar-position">
                 <h3 class="font-bold text-xl text-[#232C50]">Anisha Li</h3>
                 <p class="text-gray-500 p-4">"Manage has supercharged our team’s workflow. The <br> ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
             </div>
             <!-- Testimonial 2 -->
             <div class="space-y-4 bg-gray-50 relative">
-                <img src="./img/avatar-ali.png" alt="Ali Bravo" class="w-16 h-16 rounded-full mx-auto translate-up">
+                <img src="./img/avatar-ali.png" alt="Ali Bravo" class="w-16 h-16 rounded-full mx-auto avatar-position">
                 <h3 class="font-bold text-xl text-[#232C50]">Ali Bravo</h3>
                 <p class="text-gray-500 p-4">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
             </div>
             <!-- Testimonial 3 -->
             <div class="space-y-4 bg-gray-50 relative">
-                <img src="./img/avatar-richard.png" alt="Richard Watts" class="w-16 h-16 rounded-full mx-auto translate-up">
+                <img src="./img/avatar-richard.png" alt="Richard Watts" class="w-16 h-16 rounded-full mx-auto avatar-position">
                 <h3 class="font-bold text-xl text-[#232C50]">Richard Watts</h3>
                 <p class="text-gray-500 p-4">"Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!"</p>
             </div>
@@ -157,9 +194,9 @@
             </a>
         </div>
     </div>
-</section>
-
 </div>
+
+</section>
 
 
 <!--Section Orange -->
@@ -227,7 +264,7 @@
             <!-- Email form -->
             <div class="flex flex-col space-y-4 mt-8">
                 <div class="flex">
-                    <input type="email" placeholder="Updates in your inbox..." class="px-4 py-2 rounded-full w-20px focus:outline-none text-gray-900 mr-2">
+                    <input type="email" placeholder="Updates in your inbox..." class="px-4 py-2 rounded-full w-20px focus:outline-none  mr-2 custom-placeholder">
                     <button class="bg-coral-500 text-white px-6 py-2  hover:bg-coral-600 focus:outline-none   bg-bright-red text-white text-lg font-bold h-10 w-16 rounded-full flex items-center justify-center">Go</button>
                 </div>
                 <p class="text-sm  Copyright    px-16  " style="margin-top: 50px;">  Copyright 2020. All Rights Reserved</p>
@@ -236,6 +273,9 @@
     </div>
 </footer>
 
- 
+
+    <script src="./script.js">
+       
+    </script>
 </body>
 </html>
