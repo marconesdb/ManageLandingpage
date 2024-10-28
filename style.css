@@ -63,7 +63,7 @@ body {
 
 @media (min-width: 1025px) and (max-width: 1639px) { /* Para tablets e maiores */
     .custom-bg {
-        background-position: right -350px top -150px; /* Mantém o ajuste original */
+        background-position: right -300px top -150px; /* Mantém o ajuste original */
     }
 
 
