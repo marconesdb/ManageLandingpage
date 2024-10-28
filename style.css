@@ -29,12 +29,20 @@ body {
 
 .footer-text:hover {
     color: var(--bright-red); /* Cor ao passar o mouse */
+    
 }
 
 .text-copyright {
     font-size: 10px;
-    color: hsl(227, 12%, 61%);
+    color: var(--dark-grayish-blue);
     font-weight: normal;
+}
+
+
+
+.text-placeholder{  
+    color:var(--very-dark-blue)
+    
 }
 
 .custom-bg {
@@ -54,20 +62,12 @@ body {
     .custom-bg {
         background-position: right -450px top -200px; 
     }
-
-
- 
 }
-
-
 
 @media (min-width: 1025px) and (max-width: 1639px) { 
     .custom-bg {
         background-position: right -200px top -150px; 
     }
-
-
- 
 }
 
 @media (min-width: 1640px)  { 
