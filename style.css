@@ -37,6 +37,30 @@ body {
     font-weight: normal;
 }
 
+.custom-bg {
+    background-image: url('./img/bg-tablet-pattern.svg');
+    background-position: right -200px top -150px; /* Ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+@media (min-width: 360px) and (max-width: 576px) { /* Para dispositivos menores */
+    .custom-bg {
+        background-position: right -150px top -90px; /* Mantém o ajuste original */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Para tablets e maiores */
+    .custom-bg {
+        background-position: right -450px top -200px; /* Mantém o ajuste original */
+    }
 
 
+ 
+}
 
+@media (min-width: 1640px)  { /* Para tablets e maiores */
+    .custom-bg {
+        background-position: right -110px top -250px; /* Mantém o ajuste original */
+}
+}
