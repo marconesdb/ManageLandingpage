@@ -52,6 +52,63 @@ body {
     background-size: contain; 
 }
 
+
+.bg-custom {
+    background-image: url('./img/bg-tablet-pattern.svg');
+    background-position: -70% 65%; /* Ajusta a posição da imagem conforme necessário */
+    background-repeat: no-repeat;
+    background-size: 800px; /* Define um tamanho fixo para a imagem */
+    min-height: 600px;
+    width: 100%;
+    padding-bottom: 0px; /* Garante espaço abaixo da imagem */
+    position: relative; /* Define contexto de empilhamento */
+    z-index: 1000; /* Traz a div para a frente */
+}
+
+@media (min-width: 1025px) and (max-width: 1399px) { 
+    .bg-custom {
+        background-image: url('./img/bg-tablet-pattern.svg');
+        background-position: -70% 58%; /* Ajusta a posição da imagem conforme necessário */
+        background-repeat: no-repeat;
+        background-size: 700px; /* Define um tamanho fixo para a imagem */
+        min-height: 600px;
+        width: 100%;
+        padding-bottom: 0px; /* Garante espaço abaixo da imagem */
+        position: relative; /* Define contexto de empilhamento */
+        z-index: 1000; /* Traz a div para a frente */
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .bg-custom {
+        background-image: url('./img/bg-tablet-pattern.svg');
+        background-position: -90% 48%; /* Ajusta a posição da imagem conforme necessário */
+        background-repeat: no-repeat;
+        background-size: 600px; /* Define um tamanho fixo para a imagem */
+        min-height: 600px;
+        width: 100%;
+        padding-bottom: 0px; /* Garante espaço abaixo da imagem */
+        position: relative; /* Define contexto de empilhamento */
+        z-index: 1000; /* Traz a div para a frente */
+    }
+}
+
+
+@media (min-width: 1641px) { 
+    .bg-custom {
+        background-image: url('./img/bg-tablet-pattern.svg');
+        background-position: -35% 70%; 
+        background-repeat: no-repeat;
+        background-size: 800px; 
+        min-height: 600px;
+        width: 100%;
+        padding-bottom: 0px; 
+        position: relative; 
+        z-index: 1000; 
+    }
+}
+
 @media (min-width: 360px) and (max-width: 576px) { 
     .custom-bg {
         background-position: right -150px top -90px;
@@ -64,7 +121,9 @@ body {
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1639px) { 
+
+
+@media (min-width: 1400px) and (max-width: 1639px) { 
     .custom-bg {
         background-position: right -200px top -150px; 
     }
@@ -75,3 +134,59 @@ body {
         background-position: right -110px top -250px; 
 }
 }
+
+
+.bg-orange-custom {
+    background-image: 
+        linear-gradient(rgba(255, 87, 51, 0.9), rgba(255, 87, 51, 0.9)), 
+        url('./img/bg-tablet-pattern.svg'), 
+        url('./img/bg-tablet-pattern.svg'); /* Adiciona a imagem novamente */
+    
+    background-color: #FF5733;
+    
+    /* Define a posição de cada imagem separadamente */
+    background-position: 18% 10%, 135% 120%; /* Primeira imagem e segunda imagem */
+    background-size: auto, 40%; /* Reduz tamanho da segunda imagem */
+    background-repeat: no-repeat, no-repeat; /* Define repetição para cada imagem */
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    overflow: visible; /* Isso permite que a imagem apareça fora do container */
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) { 
+    .bg-orange-custom{
+      background-image: none;
+    }
+}
+
+
+
+
+@media (min-width: 360px) and (max-width: 767px) { 
+    .bg-orange-custom{
+        background-image: 
+        linear-gradient(rgba(255, 87, 51, 0.9), rgba(255, 87, 51, 0.9)), 
+        url('./img/bg-tablet-pattern.svg'); 
+        
+    
+    background-color: #FF5733;
+    
+    /* Define a posição de cada imagem separadamente */
+    background-position: -310% 150%; /* Primeira imagem e segunda imagem */
+    background-size:  80%; /* Reduz tamanho da segunda imagem */
+    background-repeat: no-repeat; /* Define repetição para cada imagem */
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    overflow: visible; /* Isso permite que a imagem apareça fora do container */
+    }
+}
+
+
+
+
+
+
