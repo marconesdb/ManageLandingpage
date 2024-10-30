@@ -59,7 +59,7 @@ body {
 
 .bg-custom {
     background-image: url('./img/bg-tablet-pattern.svg');
-    background-position: -70% 65%; /* Ajusta a posição da imagem conforme necessário */
+    background-position: -70% 60%; /* Ajusta a posição da imagem conforme necessário */
     background-repeat: no-repeat;
     background-size: 800px; /* Define um tamanho fixo para a imagem */
     min-height: 600px;
