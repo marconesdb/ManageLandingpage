@@ -69,6 +69,13 @@ body {
     z-index: 1000; /* Traz a div para a frente */
 }
 
+
+@media (min-width: 360px) and (max-width: 768px) { 
+    .bg-custom {
+        background-image: none;
+    }
+}
+
 @media (min-width: 1025px) and (max-width: 1399px) { 
     .bg-custom {
         background-image: url('./img/bg-tablet-pattern.svg');
