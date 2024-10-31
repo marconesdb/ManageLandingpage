@@ -21,11 +21,7 @@ body {
 }
 
 
-.avatar-position{
-    transform: translateY(-60%);
-    position: relative;
-    top: -15px; /* Ajuste a altura conforme necessário */ 
-}
+
 
 
 .footer-text:hover {
@@ -45,6 +41,16 @@ body {
     color:var(--very-dark-blue)
     
 }
+
+
+.avatar-position {
+    transform: translateY(-65%);
+    position: relative;
+    margin-top: 0px; 
+}
+
+
+
 
 
 
@@ -206,5 +212,7 @@ body {
 }
 
 
+
+  
 
 
