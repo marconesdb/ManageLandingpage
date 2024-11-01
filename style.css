@@ -155,27 +155,28 @@ body {
 
 .bg-orange-custom {
     background-image: 
-        linear-gradient(rgba(255, 87, 51, 0.9), rgba(255, 87, 51, 0.9)), 
-        url('./img/bg-tablet-pattern.svg'), 
-        url('./img/bg-tablet-pattern.svg'); /* Adiciona a imagem novamente */
+        url('./img/bg-simplify-section-desktop.svg'), 
+        linear-gradient(rgba(255, 87, 51, 0.5), rgba(255, 87, 51, 0.5)); 
     
     background-color: #FF5733;
+
+    /* Define o tamanho de cada imagem separadamente */
+    background-size: auto, 100%; /* Mantém a imagem de fundo em 100% */
     
-    /* Define a posição de cada imagem separadamente */
-    background-position: 18% 10%, 135% 120%; /* Primeira imagem e segunda imagem */
-    background-size: auto, 40%; /* Reduz tamanho da segunda imagem */
-    background-repeat: no-repeat, no-repeat; /* Define repetição para cada imagem */
+    /* Define a posição da imagem de fundo */
+    background-position: 300px calc(90%); /* Desloca a imagem 200px para a direita e 40% para cima */
+    
+    background-repeat: no-repeat; /* Define repetição para cada imagem */
     width: 100%;
-    position: relative;
-    z-index: 1000;
-    overflow: visible; /* Isso permite que a imagem apareça fora do container */
 }
+
+
 
 
 
 @media (min-width: 768px) and (max-width: 1200px) { 
     .bg-orange-custom{
-      background-image: none;
+      
     }
 }
 
@@ -185,20 +186,19 @@ body {
 @media (min-width: 360px) and (max-width: 767px) { 
     .bg-orange-custom{
         background-image: 
-        linear-gradient(rgba(255, 87, 51, 0.9), rgba(255, 87, 51, 0.9)), 
-        url('./img/bg-tablet-pattern.svg'); 
-        
+        url('./img/bg-simplify-section-desktop.svg'), 
+        linear-gradient(rgba(255, 87, 51, 0.5), rgba(255, 87, 51, 0.5)); 
     
     background-color: #FF5733;
+
+    /* Define o tamanho de cada imagem separadamente */
+    background-size: auto, 100%; /* Mantém a imagem de fundo em 100% */
     
-    /* Define a posição de cada imagem separadamente */
-    background-position: -310% 150%; /* Primeira imagem e segunda imagem */
-    background-size:  80%; /* Reduz tamanho da segunda imagem */
+    /* Define a posição da imagem de fundo */
+    background-position: -380px calc(110%); /* Desloca a imagem 200px para a direita e 40% para cima */
+    
     background-repeat: no-repeat; /* Define repetição para cada imagem */
     width: 100%;
-    position: relative;
-    z-index: 1000;
-    overflow: visible; /* Isso permite que a imagem apareça fora do container */
     }
 }
 
@@ -210,6 +210,8 @@ body {
         margin-top:-2rem; /* Ajuste conforme necessário */
     }
 }
+
+
 
 
 
