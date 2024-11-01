@@ -6,15 +6,15 @@ Este projeto é uma Landing Page simples e responsiva criada com HTML, CSS, Tail
 
 
 
-![Preview - - Manage landing page]('./design/desktop-design.jpg')
+![Preview - - Manage landing page](./assets/img/design/desktop-design.jpg)
 
-![Preview - - Manage landing page]('./design/active-states.jpg')
+![Preview - - Manage landing page](./assets/img/design/active-states.jpg)
 
-![Preview - - Manage landing page]('./design/desktop-preview.jpg')
+![Preview - - Manage landing page](./assets/img/design/desktop-preview.jpg)
 
-![Preview - - Manage landing page]('./design/mobile-navigation.jpg')
+![Preview - - Manage landing page](./assets/img/design/mobile-navigation.jpg)
 
-![Preview - - Manage landing page]('./design/mobile-design.jpg')
+![Preview - - Manage landing page](./assets/img/design/mobile-design.jpg)
 
 
 ## ✨ Tecnologias Utilizadas
