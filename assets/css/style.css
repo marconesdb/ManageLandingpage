@@ -211,6 +211,33 @@ body {
     }
 }
 
+/* Define a cor de fundo para os pontos :: */
+.text-colon {
+    color: #FF5733;
+    padding: 0.5rem;
+    border-radius: 4px; /* Apenas para adicionar leve arredondamento, se necessário */
+}
+
+/* Container em grid para formar um quadrado 2x2 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Define 2 colunas */
+    gap: 4px; /* Espaçamento entre as bolinhas */
+}
+
+/* Estilo base para as bolinhas */
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #FF5733; /* Cor padrão das bolinhas */
+    border-radius: 50%; /* Bolinhas circulares */
+}
+
+/* Define a última bolinha com um tom mais claro */
+.last-dot {
+    background-color: #FF7B5E; /* Tom mais claro para a última bolinha */
+}
+
 
 
 
