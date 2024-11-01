@@ -56,7 +56,7 @@ body {
 
 
 .custom-bg {
-    background-image: url('./img/bg-tablet-pattern.svg');
+    background-image: url('../img/bg-tablet-pattern.svg');
     background-position: right -200px top -150px; /* Ajuste conforme necessário */
     background-repeat: no-repeat;
     background-size: contain; 
@@ -64,7 +64,7 @@ body {
 
 
 .bg-custom {
-    background-image: url('./img/bg-tablet-pattern.svg');
+    background-image: url('../img/bg-tablet-pattern.svg');
     background-position: -70% 60%; /* Ajusta a posição da imagem conforme necessário */
     background-repeat: no-repeat;
     background-size: 800px; /* Define um tamanho fixo para a imagem */
@@ -84,7 +84,7 @@ body {
 
 @media (min-width: 1025px) and (max-width: 1399px) { 
     .bg-custom {
-        background-image: url('./img/bg-tablet-pattern.svg');
+        background-image: url('../img/bg-tablet-pattern.svg');
         background-position: -70% 58%; /* Ajusta a posição da imagem conforme necessário */
         background-repeat: no-repeat;
         background-size: 700px; /* Define um tamanho fixo para a imagem */
@@ -99,7 +99,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) { 
     .bg-custom {
-        background-image: url('./img/bg-tablet-pattern.svg');
+        background-image: url('../img/bg-tablet-pattern.svg');
         background-position: -90% 48%; /* Ajusta a posição da imagem conforme necessário */
         background-repeat: no-repeat;
         background-size: 600px; /* Define um tamanho fixo para a imagem */
@@ -114,7 +114,7 @@ body {
 
 @media (min-width: 1641px) { 
     .bg-custom {
-        background-image: url('./img/bg-tablet-pattern.svg');
+        background-image: url('../img/bg-tablet-pattern.svg');
         background-position: -35% 70%; 
         background-repeat: no-repeat;
         background-size: 800px; 
@@ -155,7 +155,7 @@ body {
 
 .bg-orange-custom {
     background-image: 
-        url('./img/bg-simplify-section-desktop.svg'), 
+        url('../img/bg-simplify-section-desktop.svg'), 
         linear-gradient(rgba(255, 87, 51, 0.5), rgba(255, 87, 51, 0.5)); 
     
     background-color: #FF5733;
@@ -186,7 +186,7 @@ body {
 @media (min-width: 360px) and (max-width: 767px) { 
     .bg-orange-custom{
         background-image: 
-        url('./img/bg-simplify-section-desktop.svg'), 
+        url('../img/bg-simplify-section-desktop.svg'), 
         linear-gradient(rgba(255, 87, 51, 0.5), rgba(255, 87, 51, 0.5)); 
     
     background-color: #FF5733;

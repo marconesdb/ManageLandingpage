@@ -1,96 +1,103 @@
-# Frontend Mentor - Manage landing page
+# 🚀 Projeto de Landing Page
 
-![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
+Este projeto é uma Landing Page simples e responsiva criada com HTML, CSS, Tailwind CSS e JavaScript, com foco em oferecer uma estrutura otimizada e um design moderno. É parte de um desafio do Frontend Mentor para aperfeiçoamento das habilidades técnicas criando um projeto realista.
 
-## Welcome! 👋
+## 🔍 Demonstração - Desafio Frontend Mentor 
 
-Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+![Preview - - Manage landing page]('./design/desktop-design.jpg')
 
-## The challenge
+![Preview - - Manage landing page]('./design/active-states.jpg')
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+![Preview - - Manage landing page]('./design/desktop-preview.jpg')
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+![Preview - - Manage landing page]('./design/mobile-navigation.jpg')
 
-Your users should be able to:
+![Preview - - Manage landing page]('./design/mobile-design.jpg')
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- See all testimonials in a horizontal slider
-- Receive an error message when the newsletter sign up `form` is submitted if:
-  - The `input` field is empty
-  - The email address is not formatted correctly
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## ✨ Tecnologias Utilizadas
 
-## Where to find everything
+* **HTML**: estrutura e semântica da página
+* **CSS**: estilização complementar
+* **Tailwind CSS**: estilização utilitária e responsiva
+* **JavaScript**: funcionalidades e interações dinâmicas
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+## 📁 Estrutura de Pastas
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+```
+📦 Projeto de Landing Page
+├── 📂 assets
+│   ├── 📂 css
+│   │   └── styles.css # Estilos personalizados
+│   ├── 📂 js
+│   │   └── script.js # Script principal para interações
+│   └── 📂 img
+│       └── preview.png # Imagem de pré-visualização
+│
+├── index.html # Estrutura HTML principal
+└── README.md # Documentação do projeto
+```
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## 🛠️ Instalação e Configuração
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+Para utilizar o projeto em sua máquina local, siga os passos abaixo:
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+1. **Clone o repositório**
 
-## Building your project
+```bash
+git clone https://github.com/marconesdb/ManageLandingpage
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+2. **Navegue para o diretório do projeto**
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+```bash
+cd seu-projeto
+```
 
-## Deploying your project
+3. **Instale o Tailwind CSS** (caso ainda não tenha) 
+Para utilizar Tailwind CSS em um projeto local, é necessário adicionar a linha do CDN do Tailwind CSS
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+```bash
+ <!-- CND Tailwind.CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+```
+ 
+4. **Adicione o CND Font-Awesome CSS** 
+```bash
+ <!-- CND Font-Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+```
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+5. **Adicione o Normalize CSS** 
+```bash
+ <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-## Create a custom `README.md`
+## 🚀 Uso
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+1. Abra o arquivo `index.html` em seu navegador ou utilize uma extensão de live server (como a do VSCode) para visualizar a página.
+2. Edite o conteúdo conforme necessário para adequar a Landing Page ao seu propósito.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## 🎨 Customização
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+* **Estilos**: Modifique o `styles.css` ou adicione novas classes no `tailwind.css` para personalizar cores, fontes e layout.
+* **Componentes JavaScript**: Adicione novas interações no arquivo `script.js` conforme necessário.
+* **Imagens**: Substitua as imagens na pasta `assets/img` com seus próprios arquivos de mídia.
 
-## Submitting your solution
+## 🤝 Contribuições
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## Autor
 
-## Sharing your solution
+- Portfólio - [Marcone Silva de Brito](https://layout-novo-portfolio.vercel.app/)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Linkedin - [Marcone Silva de Brito](https://www.linkedin.com/in/marconesb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8r3ohDXHRcuGjkpr%2BaKfCA%3D%3D)
 
-There are multiple places you can share your solution:
+## 📝 Licença
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions, the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.

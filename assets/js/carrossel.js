@@ -1,3 +1,5 @@
+// <!-- JavaScript do Carrossel -->
+
 const carousel = document.getElementById("carousel");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
