@@ -126,31 +126,9 @@ body {
     }
 }
 
-@media (min-width: 360px) and (max-width: 576px) { 
-    .custom-bg {
-        background-position: right -150px top -90px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) { 
-    .custom-bg {
-        background-position: right -450px top -200px; 
-    }
-}
 
 
 
-@media (min-width: 1400px) and (max-width: 1639px) { 
-    .custom-bg {
-        background-position: right -200px top -150px; 
-    }
-}
-
-@media (min-width: 1640px)  { 
-    .custom-bg {
-        background-position: right -110px top -250px; 
-}
-}
 
 
 .bg-orange-custom {
@@ -172,13 +150,6 @@ body {
 
 
 
-
-
-@media (min-width: 768px) and (max-width: 1200px) { 
-    .bg-orange-custom{
-      
-    }
-}
 
 
 
@@ -236,6 +207,34 @@ body {
 /* Define a última bolinha com um tom mais claro */
 .last-dot {
     background-color: #FF7B5E; /* Tom mais claro para a última bolinha */
+}
+
+
+
+
+
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .bg-orange-right {
+        background-image: url('../img/bg-tablet-pattern.svg'); /* Substitua pelo caminho correto da sua imagem */
+        background-position: 200%;
+        background-repeat: no-repeat;
+        background-size: 300px;
+        position: relative;
+        height: calc(30vh -  -950px); /* Por exemplo, subtraia a altura do cabeçalho ou outros elementos */
+      
+        
+      
+    }
+}
+
+
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .features-section {
+      margin-top: -500px;     
+      
+    }
 }
 
 
