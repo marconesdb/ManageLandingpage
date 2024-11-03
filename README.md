@@ -95,7 +95,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou e
 ## Autor
 
 - Portfólio - [Marcone Silva de Brito](https://layout-novo-portfolio.vercel.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [Marcone Silva de Brito](https://www.frontendmentor.io/solutions/html-css-javascript-tailwindcss-Xn7cXoeaDu)
 - Linkedin - [Marcone Silva de Brito](https://www.linkedin.com/in/marconesb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8r3ohDXHRcuGjkpr%2BaKfCA%3D%3D)
 
 ## 📝 Licença
